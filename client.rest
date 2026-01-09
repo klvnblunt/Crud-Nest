@@ -1,0 +1,46 @@
+@baseUrl = http://localhost:3000
+
+###
+
+# @name Recados
+
+GET {{baseUrl}}/recados/
+#?limit=10
+#&offset=10
+
+###
+
+# @name LocalizarUmRecado
+
+GET {{baseUrl}}/recados/1
+
+###
+
+# @name CriarUmNovoRecado
+
+POST {{baseUrl}}/recados
+Content-Type: application/json
+
+{
+    "recado": "Este é recado que estou enviando",
+    "Nova-Chave": "Outro valor"
+}
+
+###
+
+# @name AtualizaUmRecado
+
+PATCH {{baseUrl}}/recados/1
+Content-Type: application/json
+
+{
+    "recado": "Este é recado está atualizado"
+}
+
+###
+
+# @name DeletandoUmRecado
+
+DELETE  {{baseUrl}}/recados/1
+
+
