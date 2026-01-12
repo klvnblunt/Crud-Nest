@@ -12,7 +12,7 @@ GET {{baseUrl}}/recados/
 
 # @name LocalizarUmRecado
 
-GET {{baseUrl}}/recados/2
+GET {{baseUrl}}/recados/3
 
 ###
 
@@ -22,7 +22,7 @@ POST {{baseUrl}}/recados/
 Content-Type: application/json
 
 {
-    "texto": "teste Recado",
+    "texto": 1,
     "de": "João",
     "para": "José",
     "lido": false,
@@ -48,6 +48,6 @@ Content-Type: application/json
 
 # @name DeletandoUmRecado
 
-DELETE  {{baseUrl}}/recados/5/
+DELETE  {{baseUrl}}/recados/3/
 
 
