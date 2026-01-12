@@ -12,7 +12,7 @@ GET {{baseUrl}}/recados/
 
 # @name LocalizarUmRecado
 
-GET {{baseUrl}}/recados/1
+GET {{baseUrl}}/recados/2
 
 ###
 
@@ -48,6 +48,6 @@ Content-Type: application/json
 
 # @name DeletandoUmRecado
 
-DELETE  {{baseUrl}}/recados/1/
+DELETE  {{baseUrl}}/recados/5/
 
 
