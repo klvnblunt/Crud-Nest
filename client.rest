@@ -18,29 +18,36 @@ GET {{baseUrl}}/recados/1
 
 # @name CriarUmNovoRecado
 
-POST {{baseUrl}}/recados
+POST {{baseUrl}}/recados/
 Content-Type: application/json
 
 {
-    "recado": "Este é recado que estou enviando",
-    "Nova-Chave": "Outro valor"
+    "texto": "teste Recado",
+    "de": "João",
+    "para": "José",
+    "lido": false,
+    "data": "2026-01-09T18:23:38.321Z"
 }
 
 ###
 
 # @name AtualizaUmRecado
 
-PATCH {{baseUrl}}/recados/1
+PATCH {{baseUrl}}/recados/3
 Content-Type: application/json
 
 {
-    "recado": "Este é recado está atualizado"
+    "texto": "atualizar Recado",
+    "de": "João",
+    "para": "José",
+    "lido": false,
+    "data": "2026-01-09T18:23:38.321Z"
 }
 
 ###
 
 # @name DeletandoUmRecado
 
-DELETE  {{baseUrl}}/recados/1
+DELETE  {{baseUrl}}/recados/1/
 
 
