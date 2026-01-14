@@ -22,26 +22,23 @@ POST {{baseUrl}}/recados/
 Content-Type: application/json
 
 {
-    "texto": 1,
+    "texto": "Novo recado",
     "de": "João",
-    "para": "José",
-    "lido": false,
-    "data": "2026-01-09T18:23:38.321Z"
+    "para": "José"
 }
 
 ###
 
 # @name AtualizaUmRecado
 
-PATCH {{baseUrl}}/recados/3
+PATCH {{baseUrl}}/recados/4
 Content-Type: application/json
 
 {
     "texto": "atualizar Recado",
     "de": "João",
     "para": "José",
-    "lido": false,
-    "data": "2026-01-09T18:23:38.321Z"
+    "lido": true
 }
 
 ###

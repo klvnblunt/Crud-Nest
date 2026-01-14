@@ -29,7 +29,7 @@ export class RecadosController {
   }
 
   @Get(':id')
-  findOne(@Param('id', ParseIntPipe) id: string) {
+  findOne(@Param('id', ParseIntPipe) id: number) {
     return this.recadosService.findOne(id)
   }
 
@@ -42,7 +42,7 @@ export class RecadosController {
   updateAll() {}
 
   @Patch(':id')
-  updateOne(@Param('id') id: string, @Body() updateRecadoDto: UpdateRecadosDto) {
+  updateOne(@Param('id', ParseIntPipe) id: number, @Body() updateRecadoDto: UpdateRecadosDto) {
     return this.recadosService.updateOne(id, updateRecadoDto)
 
   }

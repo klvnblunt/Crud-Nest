@@ -18,4 +18,6 @@ export class CreateRecadosDto {
     @MinLength(2)
     @MaxLength(50)
     readonly para: string;
+
+    
 }
