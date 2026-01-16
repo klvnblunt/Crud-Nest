@@ -48,3 +48,48 @@ Content-Type: application/json
 DELETE  {{baseUrl}}/recados/3/
 
 
+###
+
+
+# @name Pessoas
+
+GET {{baseUrl}}/pessoas/
+#?limit=10
+#&offset=10
+
+###
+
+# @name LocalizarUmaPessoas
+
+GET {{baseUrl}}/pessoas/17
+
+###
+
+# @name CriarUmNovoRecado
+
+POST {{baseUrl}}/pessoas/
+Content-Type: application/json
+
+{
+    "email": "jonas@gmail.com",
+    "password": "12345",
+    "name": "jonas"
+}
+
+###
+
+# @name AtualizaUmRecado
+
+PATCH {{baseUrl}}/pessoas/6/
+Content-Type: application/json
+
+{
+    "password": "teste"
+}
+
+###
+
+# @name DeletandoUmaPessoa
+
+DELETE  {{baseUrl}}/pessoas/15/
+
